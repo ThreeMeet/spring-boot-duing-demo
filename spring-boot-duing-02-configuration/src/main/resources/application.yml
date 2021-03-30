@@ -1,0 +1,43 @@
+spring:
+  profiles:
+    active: prod
+
+student:
+  age: 26
+  name: 陈敏越
+  weight: 55
+  sex: 女
+
+
+food:
+  rice: 山西农业大学大米
+  meat: 日本和牛
+  sauce:
+    - 咖喱
+    - 蜜汁
+    - 孜然
+    - 香辣
+
+jasypt:
+  encryptor:
+    password: 123456!@#
+
+info:
+  username: OsSIb8bWSuEG0DqM+SCKZQ==
+  password: /MDsiISDWBj9NraIWzEoFQ==
+
+---
+#开发环境
+spring:
+  profiles: dev
+
+server:
+  port: 8010
+
+---
+#生产环境
+spring:
+  profiles: prod
+
+server:
+  port: 8020
